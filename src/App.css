@@ -1,0 +1,150 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d12222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 200px;
+  padding-top: 90px;
+}
+
+
+.column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+.categoryButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  background-color: #e6fae0;
+  border: 1px solid #54e14d;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #147900;
+  border-radius: 5px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+
+.categoryButton:hover {
+  background-color: #cef2b2;
+}
+
+.categoryButton:active {
+  animation: clickAnimation 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+.itemButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 5px;
+}
+
+.itemButton:active {
+  animation: clickAnimation 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+.totalContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total {
+  padding: 10px;
+  background-color: #a4e8b4;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  flex-grow: 1;
+  margin-right: 20px;
+  border: none;
+  color: #000;
+  cursor: default;
+}
+
+.total:hover {
+  background-color: #79eb93;
+}
+
+.clearButton {
+  padding: 10px;
+  background-color: #e38079;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.clearButton:hover {
+  background-color: #d32f2f;
+}
+
+.clearButton:active {
+  animation: clickAnimation 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.total:active {
+  animation: clickAnimation 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
